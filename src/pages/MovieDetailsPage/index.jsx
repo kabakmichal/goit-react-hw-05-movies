@@ -6,11 +6,11 @@ import {
   useLocation,
   useParams,
 } from "react-router-dom";
-import { useDetails } from "utils/hooks/useDetails";
-import { Loader } from "components/Loader";
+import { useDetails } from "../../utils/hooks/useDetails";
+import { Loader } from "../../components/Loader";
 import styles from "./MovieDetailsPage.module.css";
 
-export const MovieDetailsPage = () => {
+const MovieDetailsPage = () => {
   const { movieId } = useParams();
   const { movie } = useDetails(movieId);
   const location = useLocation();
@@ -59,3 +59,5 @@ export const MovieDetailsPage = () => {
     </div>
   );
 };
+
+export default MovieDetailsPage;

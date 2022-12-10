@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useCast } from "utils/hooks/useCast";
-import { Loader } from "components/Loader/Loader";
+import { useCast } from "../../utils/hooks/useCast";
+import { Loader } from "../../components/Loader";
 
 export const Cast = () => {
   const { movieId } = useParams();

@@ -1,9 +1,9 @@
-import { useTrend } from "utils/hooks/useTrend";
+import { useTrend } from "../../utils/hooks/useTrend";
 import styles from "./HomePage.module.css";
 import { NavLink, useLocation } from "react-router-dom";
-import { Loader } from "components/Loader";
+import { Loader } from "../../components/Loader";
 
-export const HomePage = () => {
+const HomePage = () => {
   const { trendList } = useTrend();
   const location = useLocation();
 
@@ -26,3 +26,5 @@ export const HomePage = () => {
     </main>
   );
 };
+
+export default HomePage;

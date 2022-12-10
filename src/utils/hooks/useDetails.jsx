@@ -1,4 +1,4 @@
-import { fetchDetails } from "utils/api/fetchMovies";
+import { fetchDetails } from "../api";
 import { useState, useEffect } from "react";
 
 export const useDetails = (movieId) => {

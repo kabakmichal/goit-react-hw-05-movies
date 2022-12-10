@@ -1,13 +1,13 @@
 import { useSearchParams } from "react-router-dom";
 import { Suspense, lazy } from "react";
-import { useSearch } from "utils/hooks/useSearch";
+import { useSearch } from "../../utils/hooks/useSearch";
 import styles from "./MoviesPage.module.css";
-import { Loader } from "components/Loader";
-import { Searchbar } from "components/Searchbar";
+import { Loader } from "../../components/Loader";
+import { Searchbar } from "../../components/Searchbar";
 
-const SearchMovies = lazy(() => import("components/SearchMovies"));
+const SearchMovies = lazy(() => import("../../components/SearchMovies"));
 
-export const MoviesPage = () => {
+const MoviesPage = () => {
   const [searchParams, setSearchParams] = useSearchParams();
   const query = searchParams.get("query") ?? "";
   const { movies } = useSearch(query);
@@ -28,3 +28,5 @@ export const MoviesPage = () => {
     </div>
   );
 };
+
+export default MoviesPage;

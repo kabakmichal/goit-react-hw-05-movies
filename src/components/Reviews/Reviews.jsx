@@ -1,6 +1,6 @@
 import { useParams } from "react-router-dom";
-import { useReviews } from "utils/hooks/useReviews";
-import { Loader } from "components/Loader";
+import { useReviews } from "../../utils/hooks/useReviews";
+import { Loader } from "../../components/Loader";
 
 export const Reviews = () => {
   const { movieId } = useParams();

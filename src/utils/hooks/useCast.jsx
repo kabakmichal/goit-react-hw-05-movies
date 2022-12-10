@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { useState } from "react";
-import { fetchCredits } from "utils/api/fetchMovies";
+import { fetchCredits } from "../api";
 
 export const useCast = (movieId) => {
   const [cast, setCast] = useState(null);

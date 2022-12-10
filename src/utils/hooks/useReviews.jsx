@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { fetchReviews } from "utils/api/fetchMovies";
+import { fetchReviews } from "../api";
 
 export const useReviews = (movieId) => {
   const [reviews, setReviews] = useState(null);

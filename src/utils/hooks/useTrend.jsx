@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { fetchTrend } from "utils/api/fetchMovies";
+import { fetchTrend } from "../api";
 
 export const useTrend = () => {
   const [trendList, setTrendList] = useState(null);

@@ -1,7 +1,7 @@
 import { Suspense } from "react";
 import { NavLink, Outlet } from "react-router-dom";
 import styles from "./SharedLayout.module.css";
-import { Loader } from "components/Loader";
+import { Loader } from "../Loader";
 import styled from "styled-components";
 
 const CustomLink = styled(NavLink)`
