@@ -16,8 +16,12 @@ const HomePage = () => {
         {trendList.map((movie) => {
           return (
             <li key={movie.id} className={styles.item}>
-              <NavLink to={`movie/${movie.id}`} state={{ from: location }}>
-                <span>{movie.title}</span>
+              <NavLink
+                to={`movies/${movie.id}`}
+                state={{ from: location }}
+                className={styles.title}
+              >
+                <span className={styles.title}>{movie.title}</span>
               </NavLink>
             </li>
           );

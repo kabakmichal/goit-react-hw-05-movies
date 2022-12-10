@@ -49,7 +49,9 @@ const MovieDetailsPage = () => {
         <p className={styles.paragraph}>Additional Information</p>
         <ul>
           <li className={styles.itemLink}>
-            <Link to="cast">Cast</Link>
+            <Link to="cast" className={styles.cast}>
+              Cast
+            </Link>
           </li>
         </ul>
       </div>

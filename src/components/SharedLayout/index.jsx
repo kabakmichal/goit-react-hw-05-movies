@@ -14,6 +14,9 @@ export const SharedLayout = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
+        <CustomLink className={styles.link} to="/" end>
+          Home
+        </CustomLink>
         <CustomLink className={styles.link} to="/movies">
           Movies
         </CustomLink>
